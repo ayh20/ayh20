@@ -6,5 +6,98 @@
     <description>Recent content in Functionss on Project Flogo - Docs and Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://tibcosoftware.github.io/development/webui/functions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coerce</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/coerce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/coerce/</guid>
+      <description>Data Coerce Functions This function package enables you to coerce data from one type to another.
+Valid data types in Flogo include:
+Type Description any Any data type. string A string int A standard int int32 A 32 bit integer int64 A 64 bit integer float32 A 32 bit float float64 A 64 bit float bool A boolean (true object A flogo object. Essentially a JOSN object bytes A byte data type params Parameters data type array An array type map A map toType() Used to convert a value to a specified type.</description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/http/</guid>
+      <description>HTTP Functions This function package exposes http related related utility functions.
+reqCookieToParams() Converts the &amp;lsquo;Cookie&amp;rsquo; request header value string to Params object.
+Example http.reqCookieToParams($.headers[&amp;quot;Cookie&amp;quot;]) =&amp;gt; { &amp;quot;cookie1&amp;quot;:&amp;quot;value1&amp;quot;, &amp;quot;cookie2&amp;quot;:&amp;quot;value2&amp;quot; }
+Input Arg Type Description cookies string The string from the &amp;lsquo;Cookie&amp;rsquo; request header Output Type Description params A string map of cookie name to value reqCookieFromParams() Converts a Params object to a string suitable for setting &amp;lsquo;Cookie&amp;rsquo; request header value.
+Example http.</description>
+    </item>
+    
+    <item>
+      <title>JSON</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/json/</guid>
+      <description>JSON Functions This function package exposes common json functions.
+exists() Check if the key/JSONPath is present in the json object. Refer https://github.com/oliveagle/jsonpath for expression format.
+Input Args Arg Type Description object any The json object key string The key or JSONPath to check Output Arg Type Description returnVal bool True if value is associated with the key / JSONPath get() Get value of associated key from json object
+Input Args Arg Type Description object any The json object key string The key for which the value to get Output Arg Type Description returnVal any The value associated with the key length() Get the number of top level elements in json object or array</description>
+    </item>
+    
+    <item>
+      <title>MATH</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/math/</guid>
+      <description>Math Functions This function package exposes common math functions.
+ceil() Ceil returns the least integer value greater than or equal to input
+Input Args Arg Type Description inputNumber number The input number Output Arg Type Description returnVal number The ceil value of the input number floor() Floor returns the greatest integer value less than or equal to input
+Input Args Arg Type Description inputNumber number The input number Output Arg Type Description returnVal number The floor value of the input number isNaN() IsNaN reports whether input is an IEEE 754 &amp;ldquo;not-a-number&amp;rdquo; value</description>
+    </item>
+    
+    <item>
+      <title>Number</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/number/</guid>
+      <description>Number Functions This function package exposes common number related functions.
+random() Generates a random number.
+Input Args Arg Type Description limit int The maximum number value. Output Arg Type Description returnType int A non-negative pseudo-random number. </description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/string/</guid>
+      <description>String Functions This function package exposes common string related functions.
+concat() Concatenate a set of strings.
+Input Args Arg Type Description str string Strings to concatinate Output Arg Type Description returnType string A concatinated string. equals() Check if two strings are equal
+Input Args Arg Type Description str1 string String to be compared str2 string String to be compared Output Arg Type Description returnType bool True if the strings are equal, otherwise false.</description>
+    </item>
+    
+    <item>
+      <title>URL</title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/url/</guid>
+      <description>URL Functions This function package exposes common URL functions.
+encode() Returns the URL encoded form of input string
+Input Args Arg Type Description rawURLString string Raw URL string Output Arg Type Description returnVal string The url encoded string escapedPath() Returns the escaped path part of the URL, stripping everything except the PATH after hostname.
+Input Args Arg Type Description rawURLString string Raw URL string Output Arg Type Description returnVal string The escaped PATH part of the rawURLString hostname() Returns hostname for the URL, stripping any valid port number if present.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tibcosoftware.github.io/development/webui/functions/utils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/development/webui/functions/utils/</guid>
+      <description>Utils Functions This package adds a set of functions that can be used in Flogo versions &amp;gt;= 0.9.0.
+Functions Name Decription Sample decodestring Decodestring returns the string represented by the base 64 encoded input string. utils.decodestring(&amp;quot;SGVsbG8gV29ybGQ=&amp;quot;) encodestring Encodestring returns a base 64 encoded copy of the input string. utils.encodestring(&amp;ldquo;Hello World&amp;rdquo;) uuid UUID generates a random UUID according to RFC 4122. utils.uuid() </description>
+    </item>
+    
   </channel>
 </rss>

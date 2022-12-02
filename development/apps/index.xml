@@ -13,7 +13,7 @@
       
       <guid>https://tibcosoftware.github.io/development/apps/app-structure/</guid>
       <description>Every Flogo app has the same basic structure and files for an application.
-myApp/├── flogo.json└── src├── go.mod├── go.sum├── imports.go├── main.go files The most important files are
+myApp/ ├── flogo.json └── src ├── go.mod ├── go.sum ├── imports.go ├── main.go files The most important files are
 flogo.json : flogo project application configuration descriptor file imports.go : contains go imports for contributions (activities, triggers, models and functions) used by the application main.go : main file for the engine. directories The most important directories are
 src : the place where all code is stored </description>
     </item>
@@ -48,7 +48,7 @@ Configuration will be passed to the engine in the JSON format Default path for t
       <guid>https://tibcosoftware.github.io/development/apps/best-practices-app-development/</guid>
       <description>There are a few best practices that we recommend when developing apps and functions using Flogo.
 .gitignore You definitely want to store your apps in a source control system and we recommend the the below template for your .gitignore for Flogo apps
-## Project Flogo .gitignore## To restore all dependencies and prepare the project for build run## the command `flogo imports sync`## bin folder is constructed using flogo build/bin using the -cv flag With the flogo cli you&amp;rsquo;re usually on the latest tagged version of the main flogo repos.</description>
+## Project Flogo .gitignore ## To restore all dependencies and prepare the project for build run ## the command `flogo imports sync` ## bin folder is constructed using flogo build /bin using the -cv flag With the flogo cli you&amp;rsquo;re usually on the latest tagged version of the main flogo repos.</description>
     </item>
     
   </channel>

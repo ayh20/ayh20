@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tibcosoftware.github.io/introduction/</loc>
+  </url><url>
     <loc>https://tibcosoftware.github.io/getting-started/</loc>
   </url><url>
     <loc>https://tibcosoftware.github.io/</loc>
@@ -58,11 +60,75 @@
   </url><url>
     <loc>https://tibcosoftware.github.io/development/webui/activities/</loc>
   </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/coerce/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/http/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/json/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/math/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/number/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/actreply/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/string/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/url/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/actreturn/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/channel/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/counter/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/error/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/log/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/noop/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/xml2json/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/appdata/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/jsexec/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/kafka/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/mapper/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/sqlquery/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/updobject/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/rest/</loc>
+  </url><url>
     <loc>https://tibcosoftware.github.io/development/webui/functions/</loc>
   </url><url>
     <loc>https://tibcosoftware.github.io/development/webui/triggers/</loc>
   </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/cli/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/kafka/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/tcpudp/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/app/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/channel/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/loadtester/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/rest/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/timer/</loc>
+  </url><url>
     <loc>https://tibcosoftware.github.io/flogo-cli/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/flogo-cli/flogo-cli/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/flogo-cli/plugins/</loc>
   </url><url>
     <loc>https://tibcosoftware.github.io/deployments/</loc>
   </url><url>
@@ -74,22 +140,27 @@
   </url><url>
     <loc>https://tibcosoftware.github.io/contributing/</loc>
   </url><url>
+    <loc>https://tibcosoftware.github.io/contributing/contributing/</loc>
+  </url><url>
     <loc>https://tibcosoftware.github.io/contributing/contribute-to-docs/</loc>
   </url><url>
     <loc>https://tibcosoftware.github.io/contributing/contribute-to-showcase/</loc>
   </url><url>
     <loc>https://tibcosoftware.github.io/glossary/</loc>
   </url><url>
-    <loc>https://tibcosoftware.github.io/contributing/contributing/</loc>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/api/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/json/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/activities/runaction/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/functions/utils/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/multi/</loc>
+  </url><url>
+    <loc>https://tibcosoftware.github.io/development/webui/triggers/single/</loc>
   </url><url>
     <loc>https://tibcosoftware.github.io/flogo-cli/dev-plugin/</loc>
-  </url><url>
-    <loc>https://tibcosoftware.github.io/flogo-cli/flogo-cli/</loc>
-  </url><url>
-    <loc>https://tibcosoftware.github.io/flogo-cli/plugins/</loc>
-  </url><url>
-    <loc>https://tibcosoftware.github.io/introduction/</loc>
-    <priority>0</priority>
   </url><url>
     <loc>https://tibcosoftware.github.io/labs/aws-iot/</loc>
   </url><url>
