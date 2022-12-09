@@ -12,22 +12,22 @@
     <title>My First App: Timers :: Project Flogo - Docs and Tutorials</title>
 
     
-    <link href="/css/nucleus.css?1670324040" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1670324040" rel="stylesheet">
-    <link href="/css/hybrid.css?1670324040" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1670324040" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1670324040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1670324040" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1670324040" rel="stylesheet">
-    <link href="/css/theme.css?1670324040" rel="stylesheet">
-    <link href="/css/tabs.css?1670324040" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1670324040" rel="stylesheet">
+    <link href="/css/nucleus.css?1670608089" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1670608089" rel="stylesheet">
+    <link href="/css/hybrid.css?1670608089" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1670608089" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1670608089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1670608089" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1670608089" rel="stylesheet">
+    <link href="/css/theme.css?1670608089" rel="stylesheet">
+    <link href="/css/tabs.css?1670608089" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1670608089" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1670324040" rel="stylesheet">
+    <link href="/css/theme-blue.css?1670608089" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1670324040"></script>
+    <script src="/js/jquery-3.3.1.min.js?1670608089"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -190,14 +190,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1670324040"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1670324040"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1670608089"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1670608089"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tibcosoftware.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1670324040"></script>
+<script type="text/javascript" src="/js/search.js?1670608089"></script>
 
     
   </div>
@@ -2234,34 +2234,43 @@
 <li><strong>startDelay</strong>: The start delay (ex. 1s, 1m, 1h, 1h30m etc.), immediate if not specified</li>
 <li><strong>repeatInterval</strong>: The repeat interval (ex. 1m, 1h, etc.), doesn&rsquo;t repeat if not specified</li>
 </ul>
+<p>Lets set the repeat interval to &ldquo;5s&rdquo;</p>
 <p>Click &ldquo;<em>save</em>&rdquo; to make sure everything is, well…, saved. You can click the little <code>X</code> on the top-right (no, not your browser…) to close the dialog window and go back to the flow.</p>
 <h2 id="step-3-add-activities">Step 3: Add activities</h2>
-<p>An activity is the unit of work that can be leveraged within a Flow. An activity can be any number of things and can be compared to a simple function in Go or any other procedural language, that is, an activity accepts input params and will return one or more objects on return, both input &amp; output params are defined by the activity metadata. You’ll have to add some activities to the flow for it to do something. To add an activity click on the large <code>+</code> sign</p>
+<p>An activity is the unit of work that can be leveraged within a Flow. An activity can be any number of things and can be compared to a simple function in Go or any other procedural language, that is, an activity accepts input params and will return one or more objects on return, both input &amp; output params are defined by the activity metadata. You’ll have to add some activities to the flow for it to do something. To add an activity click on the <code>+</code> sign on the canvas</p>
 <p><img src="../../images/labs/timers/step3a.png" alt="step 3a"></p>
-<p>A list with all the activities the Flogo Web UI knows about will appear. From the list you can pick the &ldquo;Log&rdquo; activity (or use the searchbar to find it) and click it to make sure it is added to the flow. As you hover over the newly added activity, a ellipsis (&hellip;) will appear, click this and a menu will appear with options to configure or delete your activity. Click the gear icon to configure your activity. In this window you can configure the inputs of the &ldquo;Log Message&rdquo; activity. Click on &ldquo;<em>a.. message</em>&rdquo; and type <code>Hello World</code> in the box (on the right hand side of the screen).</p>
+<p>A list with all the activities the Flogo Web UI knows about will appear. From the list you can pick the &ldquo;Log&rdquo; activity (or use the searchbar to find it) and click it to make sure it is added to the flow. You will see a ellipsis (&hellip;) on the newly added activity, click this and a menu will appear with options to configure or delete your activity. Click the gear icon to configure your activity. In this window you can configure the inputs of the &ldquo;Log Message&rdquo; activity. Click on &ldquo;<em>message</em>&rdquo; and type <code>Hello World</code> in the box (on the right hand side of the screen). (The &ldquo;a..&rdquo; symbol to the left of <em>message</em> denotes the data type, in this case a String)</p>
 <p><img src="../../images/labs/timers/step3b.png" alt="step 3b"></p>
 <p>With all the updates, your flow should look something like the one below.</p>
 <p><img src="../../images/labs/timers/step3c.png" alt="step 3c"></p>
 <h2 id="step-4-build">Step 4: Build</h2>
-<p>Those were all the steps needed to design the flow, now let&rsquo;s build an executable from it. On the main screen of your flow click on the <code>&lt;</code> button on the top-left hand side of the screen. Click on build and select your operating system of choice! Flogo will compile a statically linked binary, meaning that there are no other dependencies that the executable you&rsquo;re getting from the Flogo Web UI. No libraries to install, no frameworks to maintain or upgrade, just that one single binary that takes care of your flows.</p>
+<p>Those were all the steps needed to design the flow, now let&rsquo;s build an executable from it. To get to the main screen of your flow click on the <code>&lt;</code> button on the top-left hand side of the screen. Click on build and select your operating system of choice! Flogo will compile a statically linked binary, meaning that there are no other dependencies that the executable you&rsquo;re getting from the Flogo Web UI. No libraries to install, no frameworks to maintain or upgrade, just that one single binary that takes care of your flows.</p>
 <h2 id="step-5-run">Step 5: Run</h2>
 <p>To run the app double-click it (on Windows), or open a terminal and execute:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Starting app <span style="color:#f92672">[</span> app-build <span style="color:#f92672">]</span> with version <span style="color:#f92672">[</span> 0.0.1 <span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Engine Starting...
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Starting Services...
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -	ActionRunner Service: Started
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Started Services
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Starting Application...
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -	Starting Triggers...
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.trigger.timer<span style="color:#f92672">]</span> -	Scheduling a repeating timer
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -	Trigger <span style="color:#f92672">[</span> timer <span style="color:#f92672">]</span>: Started
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -	Triggers Started
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Application Started
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.224-0600	INFO	<span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -	Engine Started
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.225-0600	INFO	<span style="color:#f92672">[</span>flogo.activity.log<span style="color:#f92672">]</span> -	Hello World
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:46.225-0600	INFO	<span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -	Instance <span style="color:#f92672">[</span>19ffa126322448d04fee092d29a7ce7b<span style="color:#f92672">]</span> Done
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:51.227-0600	INFO	<span style="color:#f92672">[</span>flogo.activity.log<span style="color:#f92672">]</span> -	Hello World
-</span></span><span style="display:flex;"><span>2019-07-25T07:46:51.227-0600	INFO	<span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -	Instance <span style="color:#f92672">[</span>1affa126322448d04fee092d29a7ce7b<span style="color:#f92672">]</span> Done
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>2022-12-09T10:37:00.293Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Starting app <span style="color:#f92672">[</span> app-build <span style="color:#f92672">]</span> with version <span style="color:#f92672">[</span> 0.0.1 <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.294Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Engine Starting...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.294Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Starting Services...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.294Z        INFO    <span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -       ActionRunner Service: Started
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.295Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Started Services
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.295Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Starting Application...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.296Z        INFO    <span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -       Starting Triggers...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.297Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.trigger.timer<span style="color:#f92672">]</span> - Scheduling a repeating timer
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.298Z        INFO    <span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -       Trigger <span style="color:#f92672">[</span> timer <span style="color:#f92672">]</span>: Started
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.298Z        INFO    <span style="color:#f92672">[</span>flogo<span style="color:#f92672">]</span> -       Triggers Started
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.299Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Application Started
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.299Z        INFO    <span style="color:#f92672">[</span>flogo.engine<span style="color:#f92672">]</span> -        Engine Started
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.298Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.trigger.timer.handler<span style="color:#f92672">]</span> - Executing handler <span style="color:#f92672">[</span>timer_handler1<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event Id <span style="color:#f92672">[</span>f16f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.301Z        INFO    <span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -  Executing Flow Instance <span style="color:#f92672">[</span>f65d702d46db0727cd88107ad516b16e<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event id <span style="color:#f92672">[</span>f16f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.301Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.activity.log<span style="color:#f92672">]</span> -  Hello  World ...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:00.302Z        INFO    <span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -  Flow Instance <span style="color:#f92672">[</span>f65d702d46db0727cd88107ad516b16e<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event id <span style="color:#f92672">[</span>f16f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span> completed in 998.4µs
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:05.299Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.trigger.timer.handler<span style="color:#f92672">]</span> - Executing handler <span style="color:#f92672">[</span>timer_handler1<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event Id <span style="color:#f92672">[</span>f26f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:05.299Z        INFO    <span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -  Executing Flow Instance <span style="color:#f92672">[</span>f55d702d46db0727cd88107ad516b16e<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event id <span style="color:#f92672">[</span>f26f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:05.300Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.activity.log<span style="color:#f92672">]</span> -  Hello  World ...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:05.301Z        INFO    <span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -  Flow Instance <span style="color:#f92672">[</span>f55d702d46db0727cd88107ad516b16e<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event id <span style="color:#f92672">[</span>f26f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span> completed in 2.0012ms
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:10.311Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.trigger.timer.handler<span style="color:#f92672">]</span> - Executing handler <span style="color:#f92672">[</span>timer_handler1<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event Id <span style="color:#f92672">[</span>f36f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:10.313Z        INFO    <span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -  Executing Flow Instance <span style="color:#f92672">[</span>f45d702d46db0727cd88107ad516b16e<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event id <span style="color:#f92672">[</span>f36f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:10.314Z        INFO    <span style="color:#f92672">[</span>flogo.contrib.activity.log<span style="color:#f92672">]</span> -  Hello  World ...
+</span></span><span style="display:flex;"><span>2022-12-09T10:37:10.317Z        INFO    <span style="color:#f92672">[</span>flogo.flow<span style="color:#f92672">]</span> -  Flow Instance <span style="color:#f92672">[</span>f45d702d46db0727cd88107ad516b16e<span style="color:#f92672">]</span> <span style="color:#66d9ef">for</span> event id <span style="color:#f92672">[</span>f36f1257353b65caba84f0d92db7020b<span style="color:#f92672">]</span> completed in 4.0935ms
 </span></span></code></pre></div><p>Every 5 seconds a new entry will appear in the log.</p>
 
 
@@ -3719,19 +3728,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1670324041"></script>
-    <script src="/js/perfect-scrollbar.min.js?1670324041"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1670324041"></script>
-    <script src="/js/jquery.sticky.js?1670324041"></script>
-    <script src="/js/featherlight.min.js?1670324041"></script>
-    <script src="/js/highlight.pack.js?1670324041"></script>
+    <script src="/js/clipboard.min.js?1670608089"></script>
+    <script src="/js/perfect-scrollbar.min.js?1670608089"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1670608089"></script>
+    <script src="/js/jquery.sticky.js?1670608089"></script>
+    <script src="/js/featherlight.min.js?1670608089"></script>
+    <script src="/js/highlight.pack.js?1670608089"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1670324041"></script>
-    <script src="/js/learn.js?1670324041"></script>
-    <script src="/js/hugo-learn.js?1670324041"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1670608089"></script>
+    <script src="/js/learn.js?1670608089"></script>
+    <script src="/js/hugo-learn.js?1670608089"></script>
     
         
-            <script src="/mermaid/mermaid.js?1670324041"></script>
+            <script src="/mermaid/mermaid.js?1670608089"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

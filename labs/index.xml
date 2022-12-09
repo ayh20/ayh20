@@ -181,16 +181,6 @@ An invoice service which gets details on the invoice you specify in the URL A pa
     </item>
     
     <item>
-      <title>My First App: Hello World</title>
-      <link>https://tibcosoftware.github.io/labs/helloworld/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://tibcosoftware.github.io/labs/helloworld/</guid>
-      <description>Like with every programming language, a &amp;ldquo;Hello World&amp;rdquo; project gets you started with some basic fundamentals and Project Flogo really isn&amp;rsquo;t that different. This lab will get you started with the Flogo Web UI and building a simple flow.
-What you&amp;rsquo;ll need The Flogo Web UI This demo makes use of the Flogo Web UI. To make it easy to get started the Flogo Web UI is packaged up as a docker image which you can get from [docker hub](docker hub.</description>
-    </item>
-    
-    <item>
       <title>My First App: Timers</title>
       <link>https://tibcosoftware.github.io/labs/timers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -198,6 +188,16 @@ What you&amp;rsquo;ll need The Flogo Web UI This demo makes use of the Flogo Web
       <guid>https://tibcosoftware.github.io/labs/timers/</guid>
       <description>Timers are great to schedule stuff, and a great way to learn new technology! Use this lab to get familiar with some of the concepts of Flogo!
 What you&amp;rsquo;ll need The Flogo Web UI This demo makes use of the Flogo Web UI. To make it easy to get started the Flogo Web UI is packaged up as a docker image which you can get from docker hub. If you don&amp;rsquo;t have that one running yet, please check out Getting Started with the Flogo Web UI.</description>
+    </item>
+    
+    <item>
+      <title>My First Flogo API: Hello World</title>
+      <link>https://tibcosoftware.github.io/labs/helloworld/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://tibcosoftware.github.io/labs/helloworld/</guid>
+      <description>Like with every programming language, a &amp;ldquo;Hello World&amp;rdquo; project gets you started with some basic fundamentals and Project Flogo really isn&amp;rsquo;t that different. This lab will get you started with the Flogo Web UI and building a simple flow.
+What you&amp;rsquo;ll need The Flogo Web UI This demo makes use of the Flogo Web UI. To make it easy to get started the Flogo Web UI is packaged up as a docker image which you can get from docker hub.</description>
     </item>
     
     <item>

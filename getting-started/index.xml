@@ -22,9 +22,9 @@ Timers are great to schedule stuff, and a great way to learn new technology! Use
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tibcosoftware.github.io/getting-started/getting-started-webui/</guid>
-      <description>Getting Started For an overview of how to get started, check out the Quickstart guide
-Fetching and starting the Web UI To get started with the latest version of the Flogo Web UI, you have two options:
-Pull the source from the project-flogo/flogo-web repository on GitHub (follow the instructions in the README to build and run the UI). Fetch the latest Docker image by executing the following command in your terminal window: docker run -it -p 3303:3303 flogo/flogo-docker:latest eula-accept</description>
+      <description>What you will need Our demos and labs make use of the Flogo Web UI. The Flogo Web UI contains everything you&amp;rsquo;ll need to build your Flogo apps, without ever writing code.
+Option 1 - Get up and running quickly with Docker To make it easy to get started the Flogo Web UI is packaged up as a docker image which you can get from docker hub.
+Install docker for your environment To install Docker for your operating system click here for macOS and here for Windows.</description>
     </item>
     
     <item>

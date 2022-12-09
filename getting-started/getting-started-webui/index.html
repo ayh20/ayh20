@@ -12,22 +12,22 @@
     <title>Flogo Web UI :: Project Flogo - Docs and Tutorials</title>
 
     
-    <link href="/css/nucleus.css?1670324040" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1670324040" rel="stylesheet">
-    <link href="/css/hybrid.css?1670324040" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1670324040" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1670324040" rel="stylesheet">
-    <link href="/css/auto-complete.css?1670324040" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1670324040" rel="stylesheet">
-    <link href="/css/theme.css?1670324040" rel="stylesheet">
-    <link href="/css/tabs.css?1670324040" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1670324040" rel="stylesheet">
+    <link href="/css/nucleus.css?1670608089" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1670608089" rel="stylesheet">
+    <link href="/css/hybrid.css?1670608089" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1670608089" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1670608089" rel="stylesheet">
+    <link href="/css/auto-complete.css?1670608089" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1670608089" rel="stylesheet">
+    <link href="/css/theme.css?1670608089" rel="stylesheet">
+    <link href="/css/tabs.css?1670608089" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1670608089" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1670324040" rel="stylesheet">
+    <link href="/css/theme-blue.css?1670608089" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1670324040"></script>
+    <script src="/js/jquery-3.3.1.min.js?1670608089"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -190,14 +190,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1670324040"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1670324040"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1670608089"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1670608089"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/tibcosoftware.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1670324040"></script>
+<script type="text/javascript" src="/js/search.js?1670608089"></script>
 
     
   </div>
@@ -2183,10 +2183,11 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#what-you-will-need">What you will need</a>
       <ul>
-        <li><a href="#getting-started">Getting Started</a></li>
-        <li><a href="#fetching-and-starting-the-web-ui">Fetching and starting the Web UI</a></li>
+        <li><a href="#option-1---get-up-and-running-quickly-with-docker">Option 1 - Get up and running quickly with Docker</a></li>
+        <li><a href="#install-docker-for-your-environment">Install docker for your environment</a></li>
+        <li><a href="#option-2---build-the-web-ui-from-source">Option 2 - Build the Web UI from source</a></li>
         <li><a href="#launching-the-web-ui">Launching the Web UI</a></li>
         <li><a href="#restarting-the-web-ui-docker-container">Restarting the Web UI docker container</a></li>
       </ul>
@@ -2215,21 +2216,47 @@
         
 
 
-<h3 id="getting-started">Getting Started</h3>
-<p>For an overview of how to get started, check out the <a href="../quickstart">Quickstart</a> guide</p>
-<h3 id="fetching-and-starting-the-web-ui">Fetching and starting the Web UI</h3>
-<p>To get started with the latest version of the Flogo Web UI, you have two options:</p>
+<h2 id="what-you-will-need">What you will need</h2>
+<p>Our demos and labs make use of the Flogo Web UI.
+The Flogo Web UI contains everything you&rsquo;ll need to build your Flogo apps, without ever writing code.</p>
+<h3 id="option-1---get-up-and-running-quickly-with-docker">Option 1 - Get up and running quickly with Docker</h3>
+<p>To make it easy to get started the Flogo Web UI is packaged up as a docker image which you can get from <a href="https://hub.docker.com/r/flogo/flogo-docker/">docker hub</a>.</p>
+<h3 id="install-docker-for-your-environment">Install docker for your environment</h3>
+<p>To install Docker for your operating system click <a href="https://docs.docker.com/docker-for-mac/install/">here</a> for macOS and <a href="https://docs.docker.com/docker-for-windows/install/">here</a> for Windows.</p>
+
+<div class="notices note" ><p>If you&rsquo;re planning to run on a Windows machine older than Windows 10, you&rsquo;ll need to install <a href="https://docs.docker.com/toolbox/toolbox_install_windows/">Docker Toolbox</a></p>
+</div>
+
+<h4 id="starting-the-flogo-web-ui">Starting the Flogo Web UI</h4>
+<p>To get started with the latest version of the Flogo Web UI paste this command in a terminal window:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it -p 3303:3303 flogo/flogo-docker:latest eula-accept
+</span></span></code></pre></div><p>The parameters after the <code>docker run</code> command are:</p>
+<ul>
+<li><strong>-it</strong>: This parameter keeps a pseudo-tty terminal open and keeps the terminal running in interactive mode. The Flogo Web Ui will print logs to this terminal window</li>
+<li><strong>-p 3303:3303</strong>: This parameter tells Docker to bind your computer&rsquo;s port 3303 to the container&rsquo;s port 3303</li>
+<li><strong>flogo/flogo-docker:latest</strong>: This parameter tells the Docker daemon which container you want to run. In this case it will try to get the latest version of <code>flogo/flogo-docker</code></li>
+<li><strong>eula-accept</strong>: This parameter says you&rsquo;ve accepted the EULA agreement on our <a href="http://flogo.io">website</a></li>
+</ul>
+<p>After it is done starting the container, you&rsquo;ll see something like the image below in your terminal.</p>
+<p><img src="../../images/labs/helloworld/step1a.png" alt="step 1a"></p>
+<p>To see the Flogo Web UI, open your favorite web browser, and navigate to <a href="http://localhost:3303">http://localhost:3303</a>. You&rsquo;ll see our mascot Flynn there to greet you!</p>
+<p><img src="../../images/labs/helloworld/step1b.png" alt="step 1b"></p>
+<h3 id="option-2---build-the-web-ui-from-source">Option 2 - Build the Web UI from source</h3>
+<p>If you&rsquo;re feeling really adventurous then you can build the Web UI from source !</p>
 <ul>
 <li>Pull the source from the <a href="https://github.com/project-flogo/flogo-web">project-flogo/flogo-web repository</a> on GitHub (follow the instructions in the README to build and run the UI).</li>
-<li>Fetch the latest Docker image by executing the following command in your terminal window:</li>
 </ul>
-<p><code>docker run -it -p 3303:3303 flogo/flogo-docker:latest eula-accept</code></p>
 <h3 id="launching-the-web-ui">Launching the Web UI</h3>
 <p>To launch Flogo WebUI simply open your favorite web browser, and navigate to http://localhost:3303 (if you&rsquo;re using the Docker Hub version, otherwise use whatever port you specified when building and starting via source). You&rsquo;ll see our mascot Flynn there to greet you!</p>
 <p><img src="../../images/labs/helloworld/step1b.png" alt="Web UI"></p>
 <h3 id="restarting-the-web-ui-docker-container">Restarting the Web UI docker container</h3>
-<p>After the Docker container has been shutdown, you may wish to simply restart the same container instance, rather than creating a new instance via the <code>docker run</code> command. You can easily do this by issuing the <code>docker start</code> command and reference the previously running container id. You can find the container name and id by using the command <code>docker ps -a</code> and searching for the container with the image flogo/flogo-docker. Use the ID (or name) associated with the image to issue the <code>docker start</code> command. For example:</p>
-<p><code>docker start b24e4b9f3fa5</code></p>
+<p>After the Docker container has been shutdown, you may wish to simply restart the same container instance, rather than creating a new instance via the <code>docker run</code> command. You can easily do this by issuing the <code>docker start</code> command and reference the previously running container id.</p>
+<p>You can find the container name and id by using the command <code>docker ps -a</code> and searching for the container with the image flogo/flogo-docker.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps -a
+</span></span><span style="display:flex;"><span>CONTAINER ID   IMAGE                       COMMAND                  CREATED             STATUS                       PORTS     NAMES
+</span></span><span style="display:flex;"><span>40cce86da6d2   flogo/flogo-docker:latest   <span style="color:#e6db74">&#34;/flogo-web/docker-s…&#34;</span>   About an hour ago   Exited <span style="color:#f92672">(</span>130<span style="color:#f92672">)</span> <span style="color:#ae81ff">5</span> seconds ago             lucid_hermann
+</span></span></code></pre></div><p>Use the ID (or name) associated with the image to issue the <code>docker start</code> command. For example:</p>
+<p><code>docker start 40cce86da6d2</code></p>
 
 
 <footer class="footline">
@@ -3690,19 +3717,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1670324040"></script>
-    <script src="/js/perfect-scrollbar.min.js?1670324040"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1670324040"></script>
-    <script src="/js/jquery.sticky.js?1670324040"></script>
-    <script src="/js/featherlight.min.js?1670324040"></script>
-    <script src="/js/highlight.pack.js?1670324040"></script>
+    <script src="/js/clipboard.min.js?1670608089"></script>
+    <script src="/js/perfect-scrollbar.min.js?1670608089"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1670608089"></script>
+    <script src="/js/jquery.sticky.js?1670608089"></script>
+    <script src="/js/featherlight.min.js?1670608089"></script>
+    <script src="/js/highlight.pack.js?1670608089"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1670324040"></script>
-    <script src="/js/learn.js?1670324040"></script>
-    <script src="/js/hugo-learn.js?1670324040"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1670608089"></script>
+    <script src="/js/learn.js?1670608089"></script>
+    <script src="/js/hugo-learn.js?1670608089"></script>
     
         
-            <script src="/mermaid/mermaid.js?1670324040"></script>
+            <script src="/mermaid/mermaid.js?1670608089"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
